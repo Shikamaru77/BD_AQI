@@ -1,37 +1,27 @@
 # Bangladesh AQI Prediction
 
-## Introduction
+## Overview
 
-The 'Bangladesh AQI Prediction' is an end-to-end Machine Learning project that aims to predict the Air Quality Index (AQI) in various regions of Bangladesh. Air pollution is a significant environmental issue that affects public health and well-being. By accurately predicting the AQI, we can raise awareness about air quality and enable citizens and policymakers to take informed actions to improve air quality.
-
-## Motivation
-
-The motivation behind creating this project is to address the growing concern of air pollution in Bangladesh. With rapid urbanization, industrialization, and increasing vehicular traffic, air quality has become a critical issue in many regions of the country. The project's goal is to provide an AI-based solution that can forecast AQI levels and help individuals and authorities make informed decisions to mitigate air pollution and its adverse effects on health.
+The "Bangladesh AQI Prediction" project aims to predict the Air Quality Index (AQI) for the city of Dhaka, Bangladesh, using machine learning techniques. Air quality is a critical environmental factor that significantly affects public health, climate, and overall well-being. By developing an end-to-end machine learning project for AQI prediction, we can gain insights into air quality patterns and help policymakers, citizens, and relevant authorities take informed actions to improve air quality and mitigate its impact on health and the environment.
 
 ## Data Collection
 
-The project uses historical air quality data from various monitoring stations across Bangladesh. The data includes features such as particulate matter (PM2.5 and PM10), nitrogen dioxide (NO2), sulfur dioxide (SO2), carbon monoxide (CO), and ozone (O3) levels, along with meteorological factors like temperature, humidity, and wind speed. The data is collected from reliable sources to ensure accuracy and reliability.
+The dataset for this project was collected from Kaggle, specifically from the dataset titled "Dhaka, Bangladesh Hourly Air Quality (2016-2022)." The dataset contains hourly air quality data for Dhaka, including attributes such as date, hour, nowcast concentration, raw concentration, AQI, AQI category, and quality control name. The data spans from 2016 to 2022, providing a substantial timeframe for analysis.
 
-## Data Preprocessing
-
-Before feeding the data into the Machine Learning model, extensive data preprocessing is performed. This involves handling missing values, dealing with outliers, feature scaling, and data normalization. The data is also split into training and testing sets to evaluate the model's performance.
+Dataset Source: [Dhaka, Bangladesh Hourly Air Quality (2016-2022)](https://www.kaggle.com/datasets/shawkatsujon/dhaka-bangladesh-hourly-air-quality-20162022)
 
 ## Model Development
 
-The project utilizes various regression algorithms, including Random Forest Regression, Support Vector Regression (SVR), and Gradient Boosting Regression, to build the prediction models. Each model is trained on the preprocessed data and evaluated using appropriate evaluation metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
+In the model development phase, several steps were taken to build an effective AQI prediction model. First, a correlation matrix was used to identify the relationships between different features and the target variable (AQI). The Pearson correlation method was chosen to assess the linear correlations between variables.
 
-## Model Selection
+Next, the Recursive Feature Elimination with Cross-Validation (RFECV) technique was employed to select the most relevant features for the model. RFECV helps identify the optimal subset of features that contribute significantly to the prediction, leading to improved model performance and reduced computational complexity.
 
-The model with the best performance is selected based on evaluation metrics and is used for predicting the AQI values for unseen data.
+Finally, the Random Forest Regressor algorithm was chosen as the ensemble model for AQI prediction. Random Forest is a robust and versatile algorithm that can handle non-linearity and perform well on large datasets with high dimensionality. It provides accurate predictions and helps capture complex relationships between input features and the target variable.
 
-## Web Application
+## Model Evaluation
 
-The project includes a web application that allows users to input relevant features such as weather conditions and pollutant levels to get real-time AQI predictions for their region. The web application provides an interactive and user-friendly interface for easy access to AQI information.
+The model's performance was evaluated using the R-squared (R2) score, a common metric used to assess regression models' goodness-of-fit. The R2 score measures the proportion of variance in the target variable (AQI) explained by the model. A higher R2 score indicates a better fit of the model to the data and better prediction capability.
 
-## Importance
+The "Bangladesh AQI Prediction" project has the potential to raise awareness about air quality issues in Dhaka and provide valuable insights into factors affecting AQI fluctuations. It can aid policymakers in making informed decisions and implement effective measures to improve air quality, leading to better public health and a cleaner environment.
 
-The 'Bangladesh AQI Prediction' project holds significant importance as it contributes to environmental sustainability and public health. By providing accurate AQI predictions, it empowers individuals to make informed decisions about outdoor activities, particularly those with health issues that may be sensitive to air pollution. It also assists authorities in implementing effective policies to reduce air pollution and create a healthier environment for all citizens.
-
-## Conclusion
-
-The 'Bangladesh AQI Prediction' project is a step towards leveraging the power of Machine Learning and AI to address pressing environmental challenges. By providing real-time AQI predictions and raising awareness about air quality, the project aims to promote a cleaner and healthier Bangladesh for the present and future generations.
+Note: The project's code and detailed documentation can be found in this repository. Feel free to explore the Jupyter Notebook and contribute to further enhancements.
