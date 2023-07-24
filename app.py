@@ -19,9 +19,7 @@ def predict():
         output_category = ['Unhealthy', 'Very Unhealthy', 'Hazardous', 'Unknown', 'Unhealthy for Sensitive Groups', 'Moderate', 'Good'][int(prediction[0])]
         return render_template("index.html", prediction=output_category)
 
-
-    return render_template("index.html")
-
+  
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
 

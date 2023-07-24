@@ -9,7 +9,8 @@
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="static\css\style.css">
-  
+<script src="\static\css\work.js"></script>
+
 </head>
 
 <body>
@@ -23,16 +24,39 @@
         <input type="text" name="month" placeholder="month" required="required" />
         <input type="text" name="day" placeholder="day" required="required" />
 		      
+    <!-- Button container -->
+    <div class="button-container">
+      <!-- Predict button -->
+      <button class="button-56" role="button">Predict</button>
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      <!-- Refresh button -->
+      <button class="button-56" role="button" id="refresh-button">Refresh</button>
+  </div>
+        <br>
+        <br>
+        <h3>  {{ prediction }} </h3>
+        
+    </div>
     </form>
 
-   <br>
-   <br>
-   {{ prediction }}
 
- </div>
+    
 
+    <!-- Your script tags and other content here -->
+
+    <script>
+        // JavaScript code for handling the refresh button click
+        document.getElementById('refresh-button').addEventListener('click', function() {
+            window.location.href = '/'; // Redirect to the home page
+        });
+    </script>
+<!--
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission to prevent page refresh
+      });
+</script>
+!-->
 
 </body>
 </html>
