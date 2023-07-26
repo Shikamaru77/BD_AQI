@@ -1,5 +1,12 @@
 # Bangladesh AQI Prediction
 
+##### Author: Syed Mohammad Afraim
+
+##### Date: 23rd July, 2023
+
+##### [BD AQI prediction website](https://bd-aqi.onrender.com/predict)
+##### [Kaggle](https://www.kaggle.com/code/syedmohammadafraim2/bangladesh-aqi-prediction)
+
 ## Overview
 
 The "Bangladesh AQI Prediction" project aims to predict the Air Quality Index (AQI) for the city of Dhaka, Bangladesh, using machine learning techniques. Air quality is a critical environmental factor that significantly affects public health, climate, and overall well-being. By developing an end-to-end machine learning project for AQI prediction, we can gain insights into air quality patterns and help policymakers, citizens, and relevant authorities take informed actions to improve air quality and mitigate its impact on health and the environment.
